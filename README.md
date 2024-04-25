@@ -1,7 +1,7 @@
 # Project: Web Server Setup Script
 
 ## Overview
-This project provides a shell script for setting up a web server on a Linux system. The script automates the installation of dependencies, deployment of a website (I picked a template from tooplate.com as an example), and configuration of the Apache HTTP server.
+This project offers a shell script to facilitate setting up a web server on a Linux system. The script automates the process of installing dependencies, deploying a website (using a template from tooplate.com as an example), and configuring the Apache HTTP server.
 
 ## Features
 - **Dependency Installation**: Automatically installs necessary packages using `yum`.
@@ -62,7 +62,13 @@ The provided shell script (`websetup.sh`) performs the following steps:
 
 ## Usage
 1. Clone the repository.
-2. Execute the `websetup.sh` script with appropriate permissions.
+2. Execute the `dismantle.sh` script first with appropriate permissions.
+
+    ```bash
+    chmod +x dismantle.sh
+    ./dismantle.sh
+    ```
+3. Execute the `websetup.sh` script first with appropriate permissions.
 
     ```bash
     chmod +x websetup.sh
@@ -71,4 +77,3 @@ The provided shell script (`websetup.sh`) performs the following steps:
 
 ## Contributing
 Contributions are welcome! If you have any suggestions or improvements, feel free to open an issue or submit a pull request.
-
